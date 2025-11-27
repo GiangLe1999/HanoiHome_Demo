@@ -75,7 +75,7 @@ const locations = [
   },
 ];
 
-export function LocationCarousel() {
+export default function LocationCarousel() {
   return (
     <section className="py-16 bg-[#FFFFFF]">
       <div className="container mx-auto px-4">
