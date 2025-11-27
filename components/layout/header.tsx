@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Heart, Eye, ChevronDown, Phone, ListCheck, List } from "lucide-react";
+import { Heart, ChevronDown, Phone, List, Sparkles, Mic } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import Image from "next/image";
@@ -80,23 +80,36 @@ const Header = () => {
       {/* Top Bar */}
       <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="flex justify-end items-center h-10 gap-6">
-            <Link
-              href="/favorites"
-              className="flex items-center gap-1 text-xs text-gray-600 hover:text-primary transition-colors duration-400 font-semibold"
-            >
-              <Heart className="w-3.5 h-3.5" />
-              <span>My Favorites</span>
-              {favoritesCount > 0 && <span>({favoritesCount})</span>}
-            </Link>
-            <Link
-              href="/viewed"
-              className="flex items-center gap-1 text-xs text-gray-600 hover:text-primary transition-colors duration-400 font-semibold"
-            >
-              <List className="w-3.5 h-3.5" />
-              <span>Viewed List</span>
-              {viewedCount > 0 && <span>({viewedCount})</span>}
-            </Link>
+          <div className="flex justify-between items-center h-12 gap-6">
+            <div className="flex items-center text-primary gap-2">
+              <Button className="h-7 px-2!">
+                <Mic className="w-3 h-3 text-white" />
+              </Button>
+
+              <span className="text-[13px]">
+                Describe your ideal home, and let our AI do the searching for
+                you!
+              </span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Link
+                href="/favorites"
+                className="flex items-center gap-1 text-xs text-gray-600 hover:text-primary transition-colors duration-400 font-semibold"
+              >
+                <Heart className="w-3.5 h-3.5" />
+                <span>My Favorites</span>
+                {favoritesCount > 0 && <span>({favoritesCount})</span>}
+              </Link>
+              <Link
+                href="/viewed"
+                className="flex items-center gap-1 text-xs text-gray-600 hover:text-primary transition-colors duration-400 font-semibold"
+              >
+                <List className="w-3.5 h-3.5" />
+                <span>Viewed List</span>
+                {viewedCount > 0 && <span>({viewedCount})</span>}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -104,7 +117,7 @@ const Header = () => {
       {/* Main Navigation */}
       <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-18">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
               <Image
@@ -128,7 +141,7 @@ const Header = () => {
               >
                 <button
                   className={cn(
-                    "group text-sm relative flex items-center gap-1 px-2 py-2 text-gray-600 hover:text-primary transition-colors duration-400 font-semibold",
+                    "group relative flex items-center gap-1 px-2 py-2 text-gray-600 hover:text-primary transition-colors duration-400 font-semibold",
                     isApartmentsOpen && "text-primary"
                   )}
                 >
@@ -229,7 +242,7 @@ const NavLink = ({
 }) => (
   <Link
     href={href}
-    className="relative text-sm p-2 text-gray-600 hover:text-primary transition-colors duration-400 font-semibold group"
+    className="relative p-2 text-gray-600 hover:text-primary transition-colors duration-400 font-semibold group"
   >
     {children}
     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-0.5 bg-primary origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-400 ease-out" />

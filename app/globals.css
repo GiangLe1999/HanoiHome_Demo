@@ -6,7 +6,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-manrope: var(--font-manrope);
+  --font-caudex: var(--font-caudex);
+  --font-tangerine: var(--font-tangerine);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -116,10 +117,41 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-manrope;
+    @apply bg-background text-foreground font-caudex;
   }
 }
 
 button {
   @apply cursor-pointer;
+}
+
+/* Collapsible animations */
+@keyframes collapsible-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-collapsible-content-height);
+  }
+}
+
+@keyframes collapsible-up {
+  from {
+    height: var(--radix-collapsible-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+[data-radix-collapsible-content] {
+  overflow: hidden;
+}
+
+[data-radix-collapsible-content][data-state="open"] {
+  animation: collapsible-down 0.4s ease-out;
+}
+
+[data-radix-collapsible-content][data-state="closed"] {
+  animation: collapsible-up 0.4s ease-out;
 }

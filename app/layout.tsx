@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Caudex, Tangerine } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["vietnamese"],
-  weight: ["400", "500", "600", "700", "800"],
+const caudex = Caudex({
+  variable: "--font-caudex",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const tangerine = Tangerine({
+  variable: "--font-tangerine",
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} antialiased`}>{children}</body>
+      <body className={`${caudex.variable} ${tangerine.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
