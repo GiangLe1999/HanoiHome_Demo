@@ -84,7 +84,7 @@ export default function LocationCarousel() {
             Top Locations
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            To rent Properties in HaNoi
+            To Rent Properties in HaNoi
           </h2>
         </div>
 

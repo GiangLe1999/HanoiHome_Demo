@@ -23,7 +23,7 @@ const benefits = [
   },
 ];
 
-export function WhyChooseSection() {
+export default function WhyChooseSection() {
   return (
     <section className="py-16 bg-[#FFFFFF]">
       <div className="container mx-auto px-4">

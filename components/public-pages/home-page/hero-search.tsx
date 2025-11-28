@@ -87,7 +87,7 @@ export default function HeroSearch() {
         <div className="text-center mb-10">
           <h1 className="text-6xl md:text-8xl font-bold mb-4 font-tangerine">
             <span className="bg-linear-to-r from-[#00f1a9] via-[#fffb00] to-white bg-clip-text text-transparent">
-              Find Your Perfect Apartment
+              Find Your Perfect Property
             </span>
           </h1>
 
