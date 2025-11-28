@@ -244,10 +244,10 @@ export function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary flex items-center justify-center transition-colors group"
+                    className="w-9 h-9 rounded-lg bg-primary hover:bg-primary flex items-center justify-center transition-colors group"
                     aria-label={social.label}
                   >
-                    <social.icon className="w-4 h-4 text-slate-400 group-hover:text-white transition-colors" />
+                    <social.icon className="w-4 h-4 text-white group-hover:text-white transition-colors" />
                   </Link>
                 ))}
               </div>
@@ -265,11 +265,7 @@ export function Footer() {
 
             {/* Newsletter Form */}
             <div className="flex gap-2">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                className="bg-slate-800 border-slate-700 text-white placeholder:text-slate-500 focus-visible:ring-primary"
-              />
+              <Input type="email" placeholder="Your email address" />
               <Button
                 size="icon"
                 className="bg-primary hover:bg-primary/90 text-white shrink-0"
@@ -282,7 +278,7 @@ export function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-slate-800">
+      <div className="border-t border-gray-200">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-500">
