@@ -26,7 +26,7 @@ const benefits = [
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-24 bg-[#FFFFFF]">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid gap-16 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           {/* Cột trái: hình phòng khách */}

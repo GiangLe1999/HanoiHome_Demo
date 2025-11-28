@@ -84,7 +84,7 @@ export default function Testimonials() {
   }, [api]);
 
   return (
-    <section className="py-24 bg-[#FFFFFF]">
+    <section className="py-24 bg-white">
       {/* Header */}
       <div className="text-center mb-10">
         <div className="text-center mb-10">

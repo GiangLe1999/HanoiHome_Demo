@@ -6,6 +6,8 @@ import WhyChooseSection from "@/components/public-pages/home-page/why-choose";
 import TopProperties from "@/components/public-pages/home-page/top-properties";
 import Testimonials from "@/components/public-pages/home-page/testimonials";
 import AgentsCarousel from "@/components/public-pages/home-page/agents-carousel";
+import { TrustedMarquee } from "@/components/public-pages/home-page/trusted-marquee";
+import BlogPosts from "@/components/public-pages/home-page/blog-posts";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <TopProperties />
       <Testimonials />
       <AgentsCarousel />
+      <BlogPosts />
+      <TrustedMarquee />
     </div>
   );
 }
