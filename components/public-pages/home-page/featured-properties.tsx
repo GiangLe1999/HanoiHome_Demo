@@ -137,7 +137,7 @@ export default function FeaturedProperties() {
   };
 
   return (
-    <section className="py-16 bg-[#FFFFFF]">
+    <section className="py-24 bg-[#FFFFFF]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-10">

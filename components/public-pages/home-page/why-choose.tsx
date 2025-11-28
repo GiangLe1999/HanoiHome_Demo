@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const benefits = [
   {
@@ -25,15 +26,15 @@ const benefits = [
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-16 bg-[#FFFFFF]">
+    <section className="py-24 bg-[#FFFFFF]">
       <div className="container mx-auto px-4">
         <div className="grid gap-16 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           {/* Cột trái: hình phòng khách */}
           <div className="relative">
-            <div className="aspect-3/4 overflow-hidden bg-muted">
+            <div className="aspect-square overflow-hidden bg-muted">
               {/* Thay src bằng hình của bạn */}
               <Image
-                src="/images/home-page/why-choose-hanoi-home.webp"
+                src="/images/home-page/why-choose/why-choose-hanoi-home.jpg"
                 alt="Modern living room"
                 fill
                 className="object-cover rounded-3xl"
@@ -63,7 +64,7 @@ export default function WhyChooseSection() {
                 return (
                   <div
                     key={item.title}
-                    className="group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white/70 p-6 shadow-sm transition duration-500 hover:border-primary/30 hover:bg-white"
+                    className="group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white/70 p-6 shadow-sm transition duration-500 hover:bg-white"
                   >
                     <Image
                       src={item.icon}
@@ -73,13 +74,20 @@ export default function WhyChooseSection() {
                       height={100}
                     />
 
-                    <div className="space-y-1 pr-2">
-                      <h3 className="text-lg font-semibold text-primary">
+                    <div className="space-y-1 pr-2 cursor-pointer">
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors duration-400">
                         {item.title}
                       </h3>
-                      <p className="text-sm leading-relaxed text-muted-foreground">
+                      <p className="text-sm leading-relaxed text-gray-700">
                         {item.description}
                       </p>
+
+                      <Link
+                        href="#"
+                        className="text-[13px] underline text-gray-400 hover:text-primary transition-colors duration-400"
+                      >
+                        Read more
+                      </Link>
                     </div>
                   </div>
                 );

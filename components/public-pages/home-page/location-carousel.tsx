@@ -77,7 +77,7 @@ const locations = [
 
 export default function LocationCarousel() {
   return (
-    <section className="py-16 bg-[#FFFFFF]">
+    <section className="py-24 bg-[#FFFFFF]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <p className="text-primary text-3xl font-semibold tracking-wider mb-2 font-tangerine">

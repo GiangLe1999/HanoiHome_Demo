@@ -70,7 +70,7 @@ export default function HeroSearch() {
   };
 
   return (
-    <section className="relative min-h-[600px] flex items-center justify-center py-16">
+    <section className="relative min-h-[600px] flex items-center justify-center py-24">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

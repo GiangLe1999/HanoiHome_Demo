@@ -62,7 +62,7 @@ const testimonials = [
   },
 ];
 
-export function Testimonials() {
+export default function Testimonials() {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -84,7 +84,7 @@ export function Testimonials() {
   }, [api]);
 
   return (
-    <section className="py-16 bg-[#FFFFFF]">
+    <section className="py-24 bg-[#FFFFFF]">
       {/* Header */}
       <div className="text-center mb-10">
         <div className="text-center mb-10">
