@@ -9,7 +9,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { MapPin, Phone, Mail, Send, ChevronDown } from "lucide-react";
+import { Send, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import CustomFacebook from "../ui/icons/custom-facebook";
 import CustomLinkedin from "../ui/icons/custom-linkedin";
@@ -36,7 +36,10 @@ const villas = {
     { label: "Villas in Splendora", href: "/villas/splendora" },
     { label: "Vinhomes Riverside", href: "/villas/vinhomes-riverside" },
   ],
-  hidden: [{ label: "Villas in Ba Dinh", href: "/villas/ba-dinh" }],
+  hidden: [
+    { label: "Villas in Ba Dinh", href: "/villas/ba-dinh" },
+    { label: "Villas in Ecopark", href: "/villas/ecopark" },
+  ],
 };
 
 const houses = {
@@ -51,6 +54,30 @@ const houses = {
       label: "Houses in The Manor Central Park",
       href: "/houses/manor-central-park",
     },
+    {
+      label: "Houses in Ba Dinh",
+      href: "/houses/ba-dinh",
+    },
+    {
+      label: "Houses in Dong Da",
+      href: "/houses/dong-da",
+    },
+    {
+      label: "Houses in Nam Tu Liem",
+      href: "/houses/nam-tu-liem",
+    },
+    {
+      label: "Houses in Thanh Xuan",
+      href: "/houses/thanh-xuan",
+    },
+    {
+      label: "Houses in Vinhomes Riverside",
+      href: "/houses/vinhomes-riverside",
+    },
+    {
+      label: "Houses in Park City Hanoi",
+      href: "/houses/park-city-hanoi",
+    },
   ],
 };
 
@@ -61,7 +88,17 @@ const locations = {
     { label: "Splendora", href: "/location/splendora" },
     { label: "Truc Bach", href: "/location/truc-bach" },
   ],
-  hidden: [{ label: "Tay Ho", href: "/location/tay-ho" }],
+  hidden: [
+    { label: "Tay Ho", href: "/location/tay-ho" },
+    { label: "Hoan Kiem", href: "/location/hoan-kiem" },
+    { label: "Cau Giay", href: "/location/cau-giay" },
+    { label: "Hai Ba Trung", href: "/location/hai-ba-trung" },
+    { label: "Thanh Xuan", href: "/location/thanh-xuan" },
+    { label: "Ba Dinh", href: "/location/ba-dinh" },
+    { label: "Hoang Mai", href: "/location/hoang-mai" },
+    { label: "Long Bien", href: "/location/long-bien" },
+    { label: "Tu Liem", href: "/location/tu-liem" },
+  ],
 };
 
 const collections = [
